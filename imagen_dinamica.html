@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="" id="mi-imagen" />
+    <script>
+    var images = [ 
+        'https://mx.hola.com/imagenes/estar-bien/20201027177994/cosas-asustan-gatos-gt/0-882-234/gato-m.jpg',
+        'https://dam.ngenespanol.com/wp-content/uploads/2019/02/gatos-caja-2.png',
+        'https://i.blogs.es/5e9f97/captura-de-pantalla-2020-04-05-a-las-18.39.45/450_1000.png',
+    ]
+    var randomNumber = Math.floor(Math.random() * images.length)
+    document.querySelector('#mi-imagen').setAttribute('src', images[randomNumber])
+    </script>
+</body>
+</html>
